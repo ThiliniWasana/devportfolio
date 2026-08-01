@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-// @ts-expect-error
+// @ts-expect-error CSS module has no type declarations
 import "./globals.css";
 import ResponsiveNav from "@/components/Helper/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Helper/Home/Footer/Footer";
