@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-// @ts-ignore: side-effect import of CSS for Next.js global styles
+// @ts-expect-error
 import "./globals.css";
 import ResponsiveNav from "@/components/Helper/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Helper/Home/Footer/Footer";
