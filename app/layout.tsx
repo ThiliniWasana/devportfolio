@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+// @ts-ignore: side-effect import of CSS for Next.js global styles
 import "./globals.css";
 import ResponsiveNav from "@/components/Helper/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Helper/Home/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
-
-
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,12 +20,12 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Thilini|Personal Portfolio",
-  description: "Full Stack Developer, undergraduate student at University of Moratuwa",
+  description:
+    "Quality Assuarance Engineer, undergraduate student at University of Moratuwa",
   icons: {
-    icon: 'favicon.ico',  // You can also specify multiple sizes
-    shortcut: 'favicon-16x16.png',
-    
-  }
+    icon: "favicon.ico", // You can also specify multiple sizes
+    shortcut: "favicon-16x16.png",
+  },
 };
 
 export default function RootLayout({
@@ -38,12 +37,12 @@ export default function RootLayout({
     <html lang="en" className="custom-scrollbar">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > 
-         <ResponsiveNav/>
+      >
+        <ResponsiveNav />
         {children}
-        <Toaster position="top-right"/>
-        <Footer/>
-        <ScrollToTop/>
+        <Toaster position="top-right" />
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

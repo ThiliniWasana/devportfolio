@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"; // If using Next.js for optimized image loading
+import Image from "next/image";
 
 const ContactInfo = () => {
   return (
@@ -7,12 +7,12 @@ const ContactInfo = () => {
       {/* Image */}
       <div className="w-full flex justify-center overflow-hidden">
         <Image
-          src="/images/Handshake-Depositphotos.png" // Replace with your image path
+          src="/images/Handshake-Depositphotos.png" 
           alt="Contact Image"
-          layout="responsive" // Ensures the image fills its container
-          width={600} // Adjust the size as needed
+          layout="responsive" 
+          width={600} 
           height={150}
-          className="object-cover" // Ensures the image covers the container area
+          className="object-cover" 
         />
       </div>
 
